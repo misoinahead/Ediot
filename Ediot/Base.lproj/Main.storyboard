@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Ediot" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="Ediot" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kvy-Nh-gPB">
+                                <rect key="frame" x="60" y="60" width="294" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="YT7-Ah-f6w"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0sm-3Z-Rhm">
+                                <rect key="frame" x="137" y="646" width="140" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="3eW-bf-AIK" userLabel="width ≥ 100"/>
+                                    <constraint firstAttribute="height" constant="50" id="DIY-9I-q4Z"/>
+                                    <constraint firstAttribute="height" constant="66" id="Hai-gw-q6m" userLabel="height = 50"/>
+                                    <constraint firstAttribute="width" constant="140" id="Pn2-oD-abF"/>
+                                    <constraint firstAttribute="width" constant="119" id="qpu-TZ-neF"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="spm-dn-bZZ" userLabel="height ≥ 50"/>
+                                </constraints>
+                                <state key="normal" title="I am an idiot!"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3eW-bf-AIK"/>
+                                        <exclude reference="Hai-gw-q6m"/>
+                                        <exclude reference="qpu-TZ-neF"/>
+                                        <exclude reference="spm-dn-bZZ"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="tagHandler:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BZn-i5-whq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="0sm-3Z-Rhm" secondAttribute="trailing" constant="220" id="6VT-1F-wKu"/>
+                            <constraint firstItem="Kvy-Nh-gPB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="80x-dE-noe"/>
+                            <constraint firstItem="Kvy-Nh-gPB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="40" id="Gz5-Xj-hVr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="0sm-3Z-Rhm" secondAttribute="bottom" constant="40" id="Mzk-hb-F8I"/>
+                            <constraint firstItem="0sm-3Z-Rhm" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="221" id="OJT-el-iLo"/>
+                            <constraint firstItem="Kvy-Nh-gPB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SHd-y1-ivR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0sm-3Z-Rhm" secondAttribute="bottom" constant="267" id="U6O-di-oaF"/>
+                            <constraint firstItem="0sm-3Z-Rhm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jFR-Qa-1Y4"/>
+                            <constraint firstItem="0sm-3Z-Rhm" firstAttribute="top" secondItem="Kvy-Nh-gPB" secondAttribute="bottom" constant="99" id="xcb-gf-s0n"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="6VT-1F-wKu"/>
+                                <exclude reference="OJT-el-iLo"/>
+                                <exclude reference="xcb-gf-s0n"/>
+                                <exclude reference="U6O-di-oaF"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="myTextField" destination="Kvy-Nh-gPB" id="B9G-Qu-CFI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="168" y="238"/>
+        </scene>
+    </scenes>
+</document>
